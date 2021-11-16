@@ -42,6 +42,6 @@ const user = {
     }
 };
 
-user.Hello("jinx");
+user.Hello("Jinx");
 user.Hello("VI");
 
