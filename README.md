@@ -1,2 +1,2 @@
 # VanillaJS_study
-studying Vanilla JS
+Studying Vanilla JS
