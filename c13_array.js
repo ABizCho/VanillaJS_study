@@ -19,7 +19,7 @@ console.log(daysOfWeek[0]);//출력
 daysOfWeek[7] = "8thDay"; // (1)인덱싱하여 추가 or 수정
 console.log(daysOfWeek);
 
-daysOfWeek.push("9thDay")//(2) array.push(item) 함수로 추가하기
+daysOfWeek.push("9thDay")//(2) array.push(item) 함수로 추가하기 - 맨 끝에 item 추가 
 console.log(daysOfWeek)
 
 

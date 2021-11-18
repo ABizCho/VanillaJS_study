@@ -15,6 +15,8 @@ title.style.color ="red";
 ///js는 브라우저상에서 동작하여 html에 접근함
 ///고로 js와 브라우저간의 강력한 관계가 중요함을 이해해야함
 
+//하지만 style을 본래 CSS가 제어하는게 맞음을 알고있다. 따라서 위와같은 케이스는 좋지않으며 JS내에서 CSS를 어떻게 조작하는지 뒤에 추가로 공부한다.
+
 
 // click event :click을 listen
 /// .addEventListener 메소드를 감지하고자 하는 우리의 오브젝트 변수에 추가
@@ -22,8 +24,15 @@ title.style.color ="red";
 function handleTitleClick(){
     alert("You clicked Title!!");
 };
-
+function handleMouseEnter(){
+    title.innerText = "I'm here!";
+};
+function hadleMouseLeave(){
+    title.innerText = "Grab me!";
+}
 title.addEventListener("click",handleTitleClick); 
+title.addEventListener("mouseenter",handleMouseEnter);
+title.addEventListener("mouseleave",hadleMouseLeave); 
  // 매개변수1:listen할 이벤트  
  // 매개변수2:listen감지시 수행할 함수
 

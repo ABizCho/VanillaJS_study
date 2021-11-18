@@ -1,9 +1,11 @@
 //if else 구문
 
 // if(condition){
-//     true시 실행
+//     condition1 true 명령부
+// } else if(condition2){
+//     condition2 true 명령부 
 // } else{
-//     false 명령부 
+//     false 명령부
 // }
 
 //ex

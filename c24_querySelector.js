@@ -11,7 +11,7 @@
 
 ///querySelector() 메소드는 element를 CSS방식으로 검색할 수 있다.
 ////이말이 무엇인가?, hello라는 class 내부에(내 경우 div에 먹여놓음) 있는 h1을 가지고 올 수 있다는 것을 의미한다.
-const title = document.querySelector(".hello h1") //class명이 hello인 태그 내의 h1태그를 가져오라 (css selector)
+const title = document.querySelector(".hello h1") //class명이 hello인 태그 내의 h1태그를 가져오라 (selector)
 
 // query셀렉터 지정방식 //
 // 클래스명 : .Name /  태그명 : Tag //

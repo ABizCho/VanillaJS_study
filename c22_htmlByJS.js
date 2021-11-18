@@ -8,3 +8,4 @@ T.innerText = "Got ya!"; //HTML의 Element인 <H1>id="title"을 T에 저장했�
 console.log(T.id);
 console.log(T.className); // console.log와 property를 이용해 엘레멘트에 관한 모든것을 js로 확인할 수 있다.
 
+ 
