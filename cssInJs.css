@@ -12,9 +12,12 @@ h1 {
     transition : color 0.5s ease-in-out /* transition option은 변경간 부드러운 설정을 가능하게 한다.*/
 }
 
-/* active라는 이름의 class를 생성하고 제어 */
+/* clicked라는 이름의 class를 생성하고 제어 */
 /*   이제 이 class를 html 혹은 js에서 element,span,h1 등 어디든 달아줌으로써( 전달함으로써 )  해당하는 element의 style을 제어할 수 있다.  */
 /*      이것을 JS에서 querySelector 등 일련의 과정과 연계해서 수행할 수 있다. */
-.active { 
+.clicked { 
     color : tomato;
+}
+.good-font {
+    font-family :'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
 }
