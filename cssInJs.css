@@ -21,3 +21,7 @@ h1 {
 .good-font {
     font-family :'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
 }
+
+.purple-back-font {
+    background-color: purple;
+}
