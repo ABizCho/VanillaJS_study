@@ -1,0 +1,14 @@
+body{
+    transition : background-color 0.5s ease-in-out
+}
+
+.back-color-b{
+    background-color: blue;
+}
+.back-color-p{
+    background-color: purple;
+}
+.back-color-y{
+    background-color: yellow;
+}
+
