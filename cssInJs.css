@@ -1,0 +1,20 @@
+/* CSS in JS
+ 앞서 해왔던것처럼 JS 내에서 페이지 스타일을 제어할 수 있다, 하지만 우린 APP의 스타일을 더 세련되게 지정할 수 있는데 그것이 바로 CSS를 사용하여 스마트하게 스타일을 지정하는 이유이다.
+
+style은 되도록 css파일 내에서 제어해줘야한다.*/
+
+body {
+    background-color : peru;
+}
+
+h1 { 
+    color : chartreuse;
+    transition : color 0.5s ease-in-out /* transition option은 변경간 부드러운 설정을 가능하게 한다.*/
+}
+
+/* active라는 이름의 class를 생성하고 제어 */
+/*   이제 이 class를 html 혹은 js에서 element,span,h1 등 어디든 달아줌으로써( 전달함으로써 )  해당하는 element의 style을 제어할 수 있다.  */
+/*      이것을 JS에서 querySelector 등 일련의 과정과 연계해서 수행할 수 있다. */
+.active { 
+    color : tomato;
+}
