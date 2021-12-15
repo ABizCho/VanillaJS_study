@@ -1,0 +1,19 @@
+.mouseOn {
+  color: turquoise;
+}
+
+.mouseOff {
+  color: royalblue;
+}
+
+.mouseClick {
+  color: red;
+}
+
+.displayResize {
+  color: purple;
+}
+
+.clicked {
+  color: red;
+}
