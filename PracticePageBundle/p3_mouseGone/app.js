@@ -1,26 +1,27 @@
-let Main = document.querySelector(".main:first-child h1");
-console.log(Main);
-console.dir(Main);
+const colors = ["#1abc9c", "#3498db", "#9b59b6", "#f39c12", "#e74c3c"];
 
-function onMouse() {
-  Main.textContent = "The mouse is here!";
-  Main.className = "mouseOn";
-}
-function outMouse() {
-  Main.textContent = "The mouse is gone!";
-  Main.className = "mouseOff";
-}
-function rightClick() {
-  Main.textContent = "That was a right click!";
-  Main.className = "clicked";
-}
+const title = document.querySelector("h2");
 
-function windowResize() {
-  Main.textContent = "You just resized!";
-  Main.className = "displayResize";
-}
+const superEventHandler = {
+  mouseEnterHandler() {
+    title.textContent = "The mouse is here!";
+    title.style.color = colors[0];
+  },
+  mouseLeaveHandler() {
+    title.textContent = "The mouse is gone!";
+    title.style.color = colors[1];
+  },
+  clickHandler() {
+    title.textContent = "That was a right click!";
+    title.style.color = colors[2];
+  },
+  windowResizeHandler() {
+    title.textContent = "You just resized!";
+    title.style.color = colors[3];
+  },
+};
 
-Main.addEventListener("mouseenter", onMouse);
-Main.addEventListener("mouseleave", outMouse);
-Main.addEventListener("click", rightClick);
-window.addEventListener("resize", windowResize);
+title.addEventListener("mouseenter", superEventHandler.mouseEnterHandler);
+title.addEventListener("mouseleave", superEventHandler.mouseLeaveHandler);
+title.addEventListener("click", superEventHandler.clickHandler);
+window.addEventListener("resize", superEventHandler.windowResizeHandler);
